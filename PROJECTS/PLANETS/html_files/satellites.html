@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+    content=""width=device-width, initial-scale="1.0">
+    <script src="https://kit.fontawesome.com/b57caba884.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href=".././css_files/satellites.css">
+    <script src="../js_files/satellites.js" defer></script>
+    <title>Satellites</title>
+</head>
+<body>
+
+    <!--NAVIGATION BAR-->
+    <button class="nav-btn open-btn">
+        <i class="fas fa-bars"></i>
+    </button>
+    
+    <div class="nav nav-green">
+        <div class="nav nav-grey">
+            <div class="nav nav-white">
+                <button class="nav-btn close-btn">
+                    <i class="fas fa-times"></i>
+                </button>
+
+                <ul class="list">
+                    <li><a href="../html_files/index.html">HOME</a></li>
+                    <li><a href="../html_files/orbits.html">ORBITS</a></li>
+                    <li><a href="../html_files/globes.html">GLOBES</a></li>
+                    <li><a href="../html_files/satellites.html">SATELLITES</a></li>
+                    <li><a href="../html_files/NOTES.html">NOTES</a></li>
+                    <li>QUIZZES</a></li><li>
+                        <ul>
+                            <li><a href="../html_files/orbits_quiz.html">ORBITS</a></li>
+                            <li><a href="../html_files/globes_quiz.html">GLOBES</a></li>
+                            <li><a href="../html_files/satellites_quiz.html">SATELLITES</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+
+    <!--SATELLITES WINDOWS PATTERN-->
+    <!--EACH PLANET HAS ITS OWN WINDOW THAT CONTAINS PLANET'S NAME AND NUMBER OF SATELLITES-->
+    <div class="container">
+        <h3 class="title">
+            Satellites
+        </h3>
+
+        <div class="satellites-container">
+
+         <div class="satellite" data-name="s-1">
+            <img src="../images/earth.jpeg" alt="earth">
+            <h3>EARTH</h3>
+            <div class="number"><span>Number of Satellites:</span> 1</div>
+         </div>
+
+         <div class="satellite" data-name="s-2">
+            <img src="../images/mars.jpeg" alt="mars">
+            <h3>MARS</h3>
+            <div class="number"><span>Number of Satellites:</span> 2</div>
+         </div>
+
+         <div class="satellite" data-name="s-3">
+            <img src="../images/jupiter.jpeg" alt="jupiter">
+            <h3>JUPITER</h3>
+            <div class="number"><span>Number of Satellites:</span> 16</div>
+         </div>
+
+         <div class="satellite" data-name="s-4">
+            <img src="../images/saturn.jpeg" alt="saturn">
+            <h3>SATURN</h3>
+            <div class="number"><span>Number of Satellites:</span> 17</div>
+         </div>
+         
+
+         <div class="satellite" data-name="s-5">
+            <img src="../images/uranus.jpeg" alt="uranus">
+            <h3>URANUS</h3>
+            <div class="number"><span>Number of Satellites:</span> 15</div>
+         </div>
+
+         <div class="satellite" data-name="s-6">
+            <img src="../images/neptune.jpeg" alt="neptune">
+            <h3>NEPTUNE</h3>
+            <div class="number"><span>Number of Satellites:</span> 8</div>
+         </div>
+
+         <div class="satellite" data-name="s-7">
+            <img src="../images/pluto.jpeg" alt="pluto">
+            <h3>PLUTO</h3>
+            <div class="number"><span>Number of Satellites:</span> 1</div>
+         </div>
+
+         <div class="satellite" data-name="s-3">
+            <img src="../images/question_mark.jpeg" alt="home page">
+            <h3>QUIZ</h3>
+            <button class="satellites-button" type="button" onclick="location.href='../html_files/satellites_quiz.html'">TAKE QUIZ</button>
+         </div>
+
+         
+        </div>
+    </div>
+
+    <!--PREVIEW WINDOWS-->
+    <!--EACH WINDOW CONTAINS UP TO THREE SATELLITES FOR EACH PLANET-->
+    <!--IF A PLANET HAS MORE THAN THREE SATELLITES THEN THERE IS THE OPTION IN THE PREVIEW WINDOW TO "LEARN MORE"-->
+    <div class="satellites-preview">
+        <div class="preview" data-target="s-1">
+            <i class="fas fa-times"></i>
+            <img src="../images/earth.jpeg" alt="earth">
+            <h3>Earth</h3>
+            <div class="info">
+                <div><span>Number of Satellites:</span> 1</div>
+                <div class="category">
+                    <div><span>Satellite [I]:</span> Moon
+                        <p><span>Mean Distance <span>(103km)</span>:</span> 383</p>
+                        <p><span>Mean Period <span>(days)</span>:</span> 27.322</p>
+                        <p><span>Diameter <span>(km)</span></span> 3,476</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="preview" data-target="s-2">
+            <i class="fas fa-times"></i>
+            <img src="../images/mars.jpeg" alt="mars">
+            <h3>Mars</h3>
+            <div class="info">
+                <div><span>Number of Satellites:</span> 2</div>
+                <div class="category">
+                    <div><span>Satellite [I]:</span> Phobos
+                        <p><span>Mean Distance <span>(103km)</span>:</span> 9.38</p>
+                        <p><span>Mean Period <span>(days)</span>:</span>0.319</p>
+                        <p><span>Diameter <span>(km)</span></span> 28, 22, 18</p>
+                    </div>
+    
+                    <div><span>Satellite [II]:</span> deimos
+                        <p><span>Mean Distance <span>(103km)</span>:</span> 23.46</p>
+                        <p><span>Mean Period <span>(days)</span>:</span> 1.262</p>
+                        <p><span>Diameter <span>(km)</span></span> 16, 12, 10</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="preview" data-target="s-3">
+            <i class="fas fa-times"></i>
+            <img src="../images/jupiter.jpeg" alt="jupiter">
+            <h3>Jupiter</h3>
+            <div class="info">
+                <div><span>Number of Satellites:</span> 16</div>
+                <div class="category">
+                <div><span>Satellite [I]:</span> Io
+                        <p><span>Mean Distance <span>(103km)</span>:</span>421.6</p>
+                        <p><span>Mean Period <span>(days)</span>:</span> 1.769</p>
+                        <p><span>Diameter <span>(km)</span></span> 3,652</p>
+                    </div>
+
+                <div><span>Satellite [II]:</span> Europa
+                        <p><span>Mean Distance <span>(103km)</span>:</span> 670.9</p>
+                        <p><span>Mean Period <span>(days)</span>:</span> 3.551</p>
+                        <p><span>Diameter <span>(km)</span></span> 3,138</p>
+                    </div>
+
+                <div><span>Satellite [III]:</span> Ganymede
+                        <p><span>Mean Distance <span>(103km)</span>:</span> 1,070</p>
+                        <p><span>Mean Period <span>(days)</span>:</span> 7.155</p>
+                        <p><span>Diameter <span>(km)</span></span> 5,262</p>
+                    </div>
+            </div>
+            <button class="satellites-button" type="button" onclick="location.href='../html_files/jupiter.html'">LEARN MORE</button>
+        </div>
+    </div>
+
+        <div class="preview" data-target="s-4">
+            <i class="fas fa-times"></i>
+            <img src="../images/saturn.jpeg" alt="saturn">
+            <h3>Saturn</h3>
+            <div class="info">
+                <div><span>Number of Satellites:</span> 17</div>
+                <div class="category">
+                <div><span>Satellite [I]:</span> Mimus
+                        <p><span>Mean Distance <span>(103km)</span>:</span> 185.54</p>
+                        <p><span>Mean Period <span>(days)</span>:</span> 0.942</p>
+                        <p><span>Diameter <span>(km)</span></span> 392</p>
+                    </div>
+
+                <div><span>Satellite [II]:</span> Enceladus
+                        <p><span>Mean Distance <span>(103km)</span>:</span> 238.04</p>
+                        <p><span>Mean Period <span>(days)</span>:</span> 1.37</p>
+                        <p><span>Diameter <span>(km)</span></span> 500</p>
+                    </div>
+
+                <div><span>Satellite [III]:</span> Tethys
+                        <p><span>Mean Distance <span>(103km)</span>:</span> 294.67</p>
+                        <p><span>Mean Period <span>(days)</span>:</span> 1.888</p>
+                        <p><span>Diameter <span>(km)</span></span> 1,060</p>
+                    </div>
+            </div>
+            <button class="satellites-button" type="button" onclick="location.href='../html_files/saturn.html'">LEARN MORE</button>
+        </div>
+        </div>
+
+        <div class="preview" data-target="s-5">
+            <i class="fas fa-times"></i>
+            <img src="../images/uranus.jpeg" alt="uranus">
+            <h3>Uranus</h3>
+            <div class="info">
+                <div><span>Number of Satellites:</span> 15</div>
+                <div class="category">
+                <div><span>Satellite [I]:</span> Ariel
+                        <p><span>Mean Distance <span>(103km)</span>:</span> 191</p>
+                        <p><span>Mean Period <span>(days)</span>:</span> 2.52</p>
+                        <p><span>Diameter <span>(km)</span></span> 1,170</p>
+                    </div>
+
+                <div><span>Satellite [II]:</span> Umbriel
+                        <p><span>Mean Distance <span>(103km)</span>:</span> 266.3</p>
+                        <p><span>Mean Period <span>(days)</span>:</span> 4.144</p>
+                        <p><span>Diameter <span>(km)</span></span> 1,190</p>
+                    </div>
+
+                <div><span>Satellite [III]:</span> Titania
+                        <p><span>Mean Distance <span>(103km)</span>:</span> 435.9</p>
+                        <p><span>Mean Period <span>(days)</span>:</span> 8.706</p>
+                        <p><span>Diameter <span>(km)</span></span> 1,560</p>
+                    </div>
+            </div>
+            <button class="satellites-button" type="button" onclick="location.href='../html_files/uranus.html'">LEARN MORE</button>
+        </div>
+        </div>
+
+        <div class="preview" data-target="s-6">
+            <i class="fas fa-times"></i>
+            <img src="../images/neptune.jpeg" alt="neptune">
+            <h3>Neptune</h3>
+            <div class="info">
+                <div><span>Number of Satellites:</span> 8</div>
+                <div class="category">
+                <div><span>Satellite [I]:</span> Triton
+                        <p><span>Mean Distance <span>(103km)</span>:</span> 354.8</p>
+                        <p><span>Mean Period <span>(days)</span>:</span> 5.877</p>
+                        <p><span>Diameter <span>(km)</span></span> 3,500</p>
+                    </div>
+
+                <div><span>Satellite [II]:</span> Nereid
+                        <p><span>Mean Distance <span>(103km)</span>:</span> 5,510</p>
+                        <p><span>Mean Period <span>(days)</span>:</span> 360.21</p>
+                        <p><span>Diameter <span>(km)</span></span> 400</p>
+                    </div>
+
+                <div><span>Satellite [III]:</span> Naidad
+                        <p><span>Mean Distance <span>(103km)</span>:</span> 48.2</p>
+                        <p><span>Mean Period <span>(days)</span>:</span> 0.3</p>
+                        <p><span>Diameter <span>(km)</span></span> 50</p>
+                    </div>
+            </div>
+            <button class="satellites-button" type="button" onclick="location.href='../html_files/neptune.html'">LEARN MORE</button>
+        </div>
+        </div>
+
+        
+        
+
+        <div class="preview" data-target="s-7">
+            <i class="fas fa-times"></i>
+            <img src="../images/pluto.jpeg" alt="pluto">
+            <h3>Pluto</h3>
+            <div class="info">
+                <div><span>Number of Satellites:</span> 1</div>
+                <div><span>Satellite [I]:</span> Charon
+                        <p><span>Mean Distance <span>(103km)</span>:</span> 19.7</p>
+                        <p><span>Mean Period <span>(days)</span>:</span> 6.387</p>
+                        <p><span>Diameter <span>(km)</span></span></p>
+                    </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

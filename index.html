@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="ext.js" language="javascript"></script>
+    <script src="https://kit.fontawesome.com/b57caba884.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <!--MENU TABS & LOGO AT THE TOP-->
+        <a href="#" class="logo">Portfolio</a>
+        <div class="toggle" onclick="toggleMenu()"></div>
+        <ul class="menu">
+            <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#services" onclick="toggleMenu()">Skills</a></li>
+            <li><a href="#work" onclick="toggleMenu()">Work</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Volunteering & Work Experience</a></li>
+            <li><a href="#testimonials" onclick="toggleMenu()">Testimonials</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </ul>   
+    </header>
+
+    <!--BANNER LAYOUT-->
+    <section class="banner" id="home">
+        <div class="textBx">
+            <h2>Hello, I'm<br> <span>Lina Mastromanoli</span></h2>
+            <h3>I'm a Digital Media and Society student</h3>
+            <a href="#about" class="btn">About Me</a>
+        </div>
+    </section>
+
+    <!--ABOUT ME LAYOUT-->
+    <section class="about" id="about">
+        <div class="heading">
+            <p>Get to Know me </p>
+            <h2>About Me</h2>
+        </div>
+
+        <div class="content">
+            <div class="w50">
+                <img src="images/profile.jpg" alt="me" class="proPic">
+            </div>
+
+            <div class="content">
+                <div class="w50">
+
+                    <h2>Who am I?</h2>
+                    <h4>
+                        I’m <strong>Lina</strong>, a <strong>final-year Digital Media and Society student</strong> at the <strong>University of Sheffield</strong> 
+                        with a growing passion for <strong>web development</strong> and <strong>creating ethical, user-centered digital experiences</strong>.
+                    </h4><br>
+
+                    <h3>🚀 Bridging Technology and Society</h3>
+                    <p>
+                        Passionate about all things digital and driven by the desire to make a meaningful impact in the world 
+                        of technology, I am on a journey to explore and excel in <strong>digital media</strong> and <strong>web development</strong>. 
+                        Recently, I’ve also become increasingly interested in Web3, and I’m excited to expand my knowledge in this area.
+                    </p><br>
+
+                    <h3>🎓 Academic Journey</h3>
+                    <p>
+                        My academic journey began with a year in <strong>Computer Science</strong>, where I gained <strong>foundational programming skills</strong>. 
+                        I then transitioned to <strong>Digital Media and Society</strong> to focus more on <strong>web development</strong> practices while exploring 
+                        the <strong>sociological aspects of digital technology</strong>. This interdisciplinary approach has helped me understand how 
+                        to design solutions that not only work but also resonate with people and their needs.
+                    </p><br>
+
+                    <h3>👩🏻‍💻 Skills and Experience</h3>
+                    <p>
+                        <ul class="skills-list">
+                            <li><strong>Intermediate proficiency</strong> in <strong>HTML, CSS,</strong> and <strong>JavaScript,</strong> with experience in building <strong>responsive</strong> and <strong>user-friendly websites</strong>.</li><br>
+                            <li>Familiar with <strong>CMS systems</strong> and <strong>data visualization tools</strong>, which I have used to present <strong>complex information</strong> in clear, engaging ways.</li><br>
+                            <li><strong>Collaborative problem-solver</strong>, with strong <strong>teamwork skills</strong> gained through academic projects and volunteering.</li><br>
+                            <li>Passionate about developing <strong>ethical</strong> and <strong>inclusive technologies</strong> that prioritize <strong>user needs</strong> and <strong>impact</strong>.</li>
+                        </ul>
+                    </p><br>
+
+                    <h3>🎓 What’s Next?</h3>
+                    <p>
+                        After graduation, I plan to enhance my <strong>technical expertise</strong> through a <strong>master’s program</strong> in <strong>Computer Science</strong> 
+                        or <strong>Software Development</strong>.These programs will deepen my practical skills and help me build on the theoretical and sociological knowledge I’ve gained so far.
+                    </p><br>
+
+                    <h3>🌟 Actively Seeking Opportunities</h3>
+                    <p>
+                        I’m currently looking for <strong>coding bootcamps</strong> and <strong>web development internships</strong> to grow my skills further and gain <strong>hands-on experience</strong> in 
+                        the field. If you're seeking a <strong>driven, creative,</strong> and <strong>curious team member</strong> ready to contribute to impactful projects, let’s connect!
+                    </p><br>
+
+                    <h3>🌍 Beyond Tech</h3>
+                    <p>
+                        Outside of tech, I enjoy <strong>travelling</strong>, attending <strong>concerts</strong>, and <strong>cycling</strong>. I am also a member of the <strong>TechVision Society</strong> 
+                        and <strong>Data Science Society</strong> at my University, where I engage with like-minded peers
+                    </p>
+
+                    <div class="heading bottom">
+                        <a href="documents/CV.docx" target="_blank" id="cv-btn" class="btn round">DOWNLOAD CV</a>
+
+                        <div class="bt">
+                            <b>Name:</b> Lina Mastromanoli<br>
+                            <b>Age:</b> 21
+                        </div>
+
+                        <div class="bt">
+                            <b>Email:</b> linamastromanoli@yahoo.gr<br>
+                            <b>Location:</b> Sheffield, UK
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--SERVICES LAYOUT-->
+    <section class="services" id="services">
+        <div class="heading white">
+            <h2>My Skills</h2>
+            <p>Skills & Ongoing Development</p>
+        </div>
+        <div class="content">
+            <div class="servicesBx">
+                <i class="fa fa-brands fa-html5 fa-4x"></i>
+                <h3>Web Structure, HTML</h3>
+                <p>Creating organized, semantic web content with HTML.</p>
+            </div>
+
+            <div class="servicesBx">
+                <i class="fa fa-css3 fa-4x"></i>
+                <h3>Web Design, CSS</h3>
+                <p>Crafting visually appealing and responsive web layouts with CSS.</p>
+            </div>
+
+            <div class="servicesBx">
+                <i class="fa fa-brands fa-js fa-4x"></i>
+                <h3>Responsive Web Design, JavaScript</h3>
+                <p>Enhancing user experience with dynamic and adaptable web interfaces.</p>
+            </div>
+
+            <div class="servicesBx">
+                <i class="fa fa-solid fa-video fa-4x"></i>
+                <h3>Digital Storytelling, Adobe Animate</h3>
+                <p>Bringing narratives to life through animation with Adobe Animate.</p>
+            </div>
+
+            <div class="servicesBx">
+                <i class="fa fa-solid fa-r fa-4x"></i>
+                <h3>Data Visualisation, R</h3>
+                <p>Conveying insights effectively through compelling visual representations using R.</p>
+            </div>
+
+            <div class="servicesBx">
+                <i class="fa fa-brands fa-microsoft fa-4x"></i>
+                <h3>MS Office, ECDL</h3>
+                <p>Proficient in essential office software tools for efficient document management.</p>
+            </div>
+        </div>
+    </section>
+
+    <!--WORK LAYOUT-->
+    <section class="work" id="work">
+        <div class="heading">
+            <h2>My Latest Work</h2>
+            <p>Showcasing some of my <b>Projects</b></p>
+        </div>
+
+        <div class="content">
+            <div class="workBx">
+                <a href="PROJECTS/UDEMY/50 PROJECTS/Project_51_Simple_Timer/index.html" target="_blank">
+                    <img src="images/simple_timer.png" alt="timer">
+                    <p>Simple Timer</p>
+                </a>
+            </div>
+
+            <div class="workBx">
+                <a href="PROJECTS/UDEMY/50 PROJECTS/Project_50_Insect_Catch_Game/index.html" target="_blank">
+                    <img src="images/insect_catch_game.png" alt="insect catch game">
+                    <p>Insect Catch Game</p>
+                </a>
+            </div>
+
+            <div class="workBx">
+                <a href="PROJECTS/UDEMY/50 PROJECTS/Project_49_ToDo_List/index.html" target="_blank">
+                    <img src="images/to_do.png" alt="to do">
+                    <p>To Do List</p>
+                </a>
+            </div>
+
+            <div class="workBx">
+                <a href="PROJECTS/UDEMY/50 PROJECTS/Project_39_Password_Strength_Background/index.html" target="_blank">
+                    <img src="images/password_strength_background.png" alt="password strength background">
+                    <p>Password Strength Background</p>
+                </a>
+            </div>
+
+            <div class="workBx">
+                <a href="PROJECTS/UDEMY/50 PROJECTS/Project_28_Github_Profiles/index.html" target="_blank">
+                    <img src="images/github_profiles.png" alt="GitHub Profiles">
+                    <p>GitHub Profiles</p>
+                </a>
+            </div>
+
+            <div class="workBx">
+                <a href="PROJECTS/PLANETS/html_files/index.html" target="_blank">
+                    <img src="images/planets.png" alt="planets">
+                    <p>Learning about Planets Web Application</p>
+                </a>
+            </div>
+            <div class="heading">
+                <a href="https://drive.google.com/drive/folders/1wQyyJwU4cTVrj1cNAJAOK4yC818Ore7f?usp=drive_link" target="_blank" class="btn" style="color: #fff">View All My Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!--VOLUNTEERING & WORK EXPERIENCE LAYOUT-->
+    <section class="experience-testimonial" id="experience">
+        <div class="heading white">
+            <h2>Volunteering & Work Experience</h2>
+            <p>Experiences that have helped me gain valuable personality skills</p>
+        </div>
+
+        <div class="content">
+            <div class="experience-testimonialBx">
+                <p>As a member of the <span>digital media promotion team</span> for the <span>Erasmus+ program</span>, our focus was on raising 
+                    awareness for injured animal care. I led <span>innovative promotional strategies</span>, including interviews and 
+                    captivating social media videos. Our efforts landed us on the <span>front page</span> of the city's newspaper, 
+                    achieved through the creation of <span>eye-catching posters, flyers,</span> and <span>web-based materials</span>. 
+                    <span>Collaborating </span> with individuals from <span>diverse backgrounds</span> sharpened my <span>communication</span> and <span>teamwork abilities</span>. 
+                    Additionally, the program's <span>dynamic nature</span>, with participants regularly reassigned to <span>new groups</span> and 
+                    <span>tasks</span>, honed my <span>adaptability skills</span>. Through this experience, I developed a profound sense of <span>responsibility</span>, 
+                    understanding the <span>commitment</span> required for effective animal care.
+                </p>
+                <h3>Animal Welfare, Erasmus+<br>Rotenburg, Germany<br>June – July 2019</h3>
+            </div>
+
+            <div class="experience-testimonialBx">
+                <p>Throughout my experience, I've acquired a <span>diverse set of skills</span> essential for success in <span>fast-paced environments</span>. 
+                    <span>Teamwork</span> has been a cornerstone, as I collaborated with colleagues to efficiently complete tasks such as packing 
+                    customers' orders and sorting products. During peak periods like the Christmas rush, I thrived under <span>pressure</span>, 
+                    demonstrating <span>time management skills</span> to ensure timely order fulfillment. My commitment to <span>accuracy</span> and <span>attention to detail</span> 
+                    was evident in carefully sorting warehouse products based on their barcode and weight, ensuring precise 
+                    <span>inventory management</span>. These experiences have honed my <span>organizational abilities</span>, equipping me to excel in any challenging 
+                    work environment.
+                </p>
+                <h3>Amazon<br>Doncaster, UK<br>August 2022 – February 2023</h3>
+            </div>
+
+            <div class="experience-testimonialBx">
+                <p>
+                    I recently participated in a <span>Blockchain Hackathon</span> as part of a small team. I was responsible for the <span>front-end development</span>, where I 
+                    leveraged my <span>web development skills</span> to create a solid foundation for our project. I completed my tasks <span>ahead of schedule</span>, which allowed 
+                    my teammates to start on the back-end work. My teammates were very pleased with my work, but unfortunately, due to a back-end error, we 
+                    were unable to submit the project. Despite this setback, the experience was incredibly <span>rewarding</span>, and it has sparked my interest in learning 
+                    more about <span>blockchain technology</span> and building <span>decentralized applications (d-apps)</span>. In the future, I would like to be able to contribute to 
+                    the back-end of blockchain d-apps as well, so I can help address issues like the one we encountered in our project.
+                </p>
+                <h3>Encode Club<br>Remote<br>November 2024 - January 2025</h3>
+            </div>
+
+            <div class="experience-testimonialBx">
+                <p>
+                    In my role at PDSA, I manage various shop floor activities, including tilling, tidying, restocking shelves, and serving customers. 
+                    This experience has significantly enhanced my <span>communication</span> and <span>teamwork skills</span>, as I collaborate closely with colleagues to ensure 
+                    smooth operations and a positive <span>customer experience</span>. I have also developed strong <span>time management skills, balancing multiple tasks efficiently</span> 
+                    while <span>meeting deadlines</span> and maintaining a high level of service. When being part of a team for a project, I have learnt 
+                    how to apply these <span>transferable skills</span> to ensure <span>effective collaboration, clear communication</span>, and <span>timely delivery</span> of tasks.
+                </p>
+                <h3>PDSA <br>Broomhill, UK<br>July 2024 – Present</h3>
+            </div>
+        </div>
+    </section>
+
+
+<!--TESTIMONIALS-->
+    <section class="experience-testimonial" id="testimonials">
+        <div class="heading">
+            <h2>Testimonials</h2>
+            <p>Feedback from Those I've Worked With</p>
+        </div>
+
+        <div class="content">
+            <div class="experience-testimonialBx">
+                <p>
+                    Working with you was an absolute pleasure. The <span>frontend</span> you developed perfectly matched the design we discussed, and it turned out fantastic. 
+                    Your <span>attention to detail</span> made the entire process <span>smooth</span> and <span>seamless</span>.
+                </p>
+                <h5>Manav Goyal<br>Future of Blockchain Hackathon Teammate<br>November 2024 - January 2025</h5>
+            </div>
+
+            <div class="experience-testimonialBx">
+                <p>
+                    I had the pleasure of collaborating with Lina during a hackathon, and her skills as a <span>frontend engineer</span> were truly impressive. She consistently 
+                    brought <span>innovative ideas</span> to the table, wrote <span>clean</span> and <span>efficient code</span>, and remained <span>composed under tight deadlines</span>, making her an <span>invaluable team member</span>.
+                </p>
+                <h5>Sudhansu Wani<br>Future of Blockchain Hackathon Teammate<br>November 2024 - January 2025</h5>
+            </div>
+        </div>
+    </section>
+
+    <!--CONTACT LAYOUT-->
+<section class="contact" id="contact">
+    <div class="heading white">
+        <p>Feel free to contact me anytime</p>
+        <h2>Get in Touch</h2>
+    </div>
+
+    <div class="content">
+        <div class="contactInfo">
+            <h3>Contact Info</h3>
+            <p>Open to realocation on a global level. Feel free to contact me!</p>
+
+            <div class="contactInfoBx">
+                <div class="box">
+                    <div class="icon">
+                        <i class="fa fa-map-marker"></i>
+                    </div>
+
+                    <div class="text">
+                        <h3>Address</h3>
+                        <address>51 Wellington Street<br>Fenton House, E04D
+                            <br>Sheffield, UK<br>S1 4HL
+                        </address>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="icon">
+                        <i class="fa fa-phone"></i>
+                    </div>
+
+                    <div class="text">
+                        <h3>Phone Number</h3>
+                        <p>07502980595</p>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="icon">
+                        <i class="fa fa-envelope-o"></i>
+                    </div>
+
+                    <div class="text">
+                        <h3>Email Address</h3>
+                        <p>linamastromanoli@yahoo.gr</p>
+                    </div>
+                </div>
+                <br>
+                <h3>Social Connect</h3>
+                <div class="boxSocial">
+                    <div class="icon">
+                        <a href="https://www.linkedin.com/in/archontoula-mastromanoli-34150029a/" target="_blank">
+                            <i class="fa fa-linkedin-square"></i>
+                        </a>
+                    </div>
+
+                    <div class="icon">
+                        <a href="https://www.instagram.com/lina.mastromanoli/" target="_blank">
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="formBx">
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <h3>Message Me</h3>
+                <input type="hidden" name="access_key" value="8ba94a19-6860-48c6-81bc-d47ade27d827">
+                <input type="text" name="full_name" placeholder="Full Name">
+                <input type="email" name="email" placeholder="Email">
+                <textarea name="message" id="" rows="8" placeholder="Your Message"></textarea>
+                <input class="send-msg" type="submit" name="submit" value="Send Message"/>
+            </form>
+        </div>
+
+    </div>
+</section>
+
+<!--FOOTER LAYOUT-->
+<footer class="copyright">
+    <p>&copy; 2024, Archontoula Mastromanoli, All rights reserved</p>
+</footer>
+</body>
+</html>
+
+
+
