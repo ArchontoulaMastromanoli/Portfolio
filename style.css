@@ -184,8 +184,36 @@ header ul li a{
     display: inline-block;
     margin: 0 15px;
     text-decoration: none;
-    color: #3C3C3C;
+    color: #FFF5E4;
 }
+
+header ul li a::before,
+a::after{
+    content: "";
+    width: 0%;
+    height: 3px;
+    background-color: #cb4747;
+    position: absolute;
+    transition: 0.5s;
+}
+
+header ul li a::after{
+    top: -6px;
+    right: 0;
+}
+
+header ul li a::before{
+    bottom: -6px;
+    left: 0;
+    background-color: #FFF5E4;
+}
+
+header ul li a:hover::after,
+header ul li a:hover::before{
+    width: 100%;
+}
+
+
 
 /*STICKY HEADER MENU NAV BAR*/
 header.sticky{
