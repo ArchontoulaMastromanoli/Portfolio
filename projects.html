@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="ext.js" language="javascript"></script>
+    <script src="filters.js" defer></script>
+    <script src="https://kit.fontawesome.com/b57caba884.js" crossorigin="anonymous"></script>
+ </head>
+
+
+ <body>
+    <header>
+        <!--MENU TABS & LOGO AT THE TOP-->
+        <a href="#" class="logo">Portfolio</a>
+        <div class="toggle" onclick="toggleMenu()"></div>
+        <ul class="menu">
+            <li><a href="./index.html" onclick="toggleMenu()">Home</a></li>
+        </ul>   
+    </header>
+
+    <section class="work" id="work">
+    <div class="heading">
+        <h2>My Latest Work</h2>
+        <p>Showcasing some of my <b>Projects</b></p>
+    </div>
+
+    <!-- FILTER BUTTONS -->
+    <div class="filters">
+        <button data-filter="all" class="active">All</button>
+        <button data-filter="mini-app">Mini Apps</button>
+        <button data-filter="ui-component">UI Components</button>
+    </div>
+
+    <div class="content">
+        <!-- MINI APPS -->
+        <div class="workBx" data-type="mini-app">
+            <a href="./PROJECTS/mini_apps/Simple_Timer/index.html" target="_blank">
+                <img src="images/PROJECTS/simple_timer.png" alt="Simple Timer">
+                <p>Simple Timer</p>
+            </a>
+        </div>
+
+        <div class="workBx" data-type="mini-app">
+            <a href="./PROJECTS/mini_apps/Insect_Catch_Game/index.html" target="_blank">
+                <img src="images/PROJECTS/insect_catch_game.png" alt="Insect Catch Game">
+                <p>Insect Catch Game</p>
+            </a>
+        </div>
+
+        <div class="workBx" data-type="mini-app">
+            <a href="./PROJECTS/mini_apps/ToDo_List/index.html" target="_blank">
+                <img src="images/PROJECTS/to_do.png" alt="To Do">
+                <p>To Do List</p>
+            </a>
+        </div>
+
+        <div class="workBx" data-type="mini-app">
+            <a href="./PROJECTS/mini_apps/PLANETS/html_files/index.html" target="_blank">
+                <img src="images/PROJECTS/planets.png" alt="planets">
+                <p>Learning about Planets Web Application</p>
+            </a>
+        </div>
+
+        <div class="workBx" data-type="mini-app">
+            <a href="./PROJECTS/mini_apps/Dad_Jokes/index.html" target="_blank">
+                <img src="images/PROJECTS/dad jokes.png" alt="Dad Jokes">
+                <p>Dad Jokes</p>
+            </a>
+        </div>
+
+        <div class="workBx" data-type="mini-app">
+            <a href="./PROJECTS/mini_apps/Event_KeyCodes/index.html" target="_blank">
+                <img src="images/PROJECTS/event key codes.png" alt="Event Key Codes">
+                <p>Event Key Codes</p>
+            </a>
+        </div>
+
+        <div class="workBx" data-type="mini-app">
+            <a href="./PROJECTS/mini_apps/Random_Choice_Picker/index.html" target="_blank">
+                <img src="images/PROJECTS/random_choice_picker.png" alt="Random Choice Maker">
+                <p>Random Choice Maker</p>
+            </a>
+        </div>
+
+        <div class="workBx" data-type="mini-app">
+            <a href="./PROJECTS/mini_apps/Drink_Water/index.html" target="_blank">
+                <img src="images/PROJECTS/drink_water.png" alt="Drink Water">
+                <p>Drink Water</p>
+            </a>
+        </div>
+
+        <div class="workBx" data-type="mini-app">
+            <a href="./PROJECTS/mini_apps/Theme_Clock/index.html" target="_blank">
+                <img src="images/PROJECTS/theme_clock.png" alt="Theme Clock">
+                <p>Theme Clock</p>
+            </a>
+        </div>
+
+        <div class="workBx" data-type="mini-app">
+            <a href="./PROJECTS/mini_apps/Drawing_App/index.html" target="_blank">
+                <img src="images/PROJECTS/drwaing_app.png" alt="Drawing App">
+                <p>Drawing App</p>
+            </a>
+        </div>
+
+        <div class="workBx" data-type="mini-app">
+            <a href="./PROJECTS/mini_apps/Password_Generator/index.html" target="_blank">
+                <img src="images/PROJECTS/password_generator.png" alt="Password Generator">
+                <p>Password Generator</p>
+            </a>
+        </div>
+
+        <!-- UI COMPONENTS -->
+        <div class="workBx" data-type="ui-component">
+            <a href="./PROJECTS/UI_Components/Password_Strength_Background/index.html" target="_blank">
+                <img src="images/PROJECTS/password_strength_background.png" alt="password strength background">
+                <p>Password Strength Background</p>
+            </a>
+        </div>
+
+        <div class="workBx" data-type="ui-component">
+            <a href="./PROJECTS/UI_Components/Github_Profiles/index.html" target="_blank">
+                <img src="images/PROJECTS/github_profiles.png" alt="GitHub Profiles">
+                <p>GitHub Profiles</p>
+            </a>
+        </div>
+
+        <div class="workBx" data-type="ui-component">
+            <a href="./PROJECTS/UI_Components/Expanding_Cards/index.html" target="_blank">
+                <img src="images/PROJECTS/expanding cards.png" alt="Expanding Cards">
+                <p>Expanding Cards</p>
+            </a>
+        </div>
+
+        <div class="workBx" data-type="ui-component">
+            <a href="./PROJECTS/UI_Components/Progress_Steps/index.html" target="_blank">
+                <img src="images/PROJECTS/progress steps.png" alt="Progress Steps">
+                <p>Progress Steps</p>
+            </a>
+        </div>
+
+        <div class="workBx" data-type="ui-component">
+            <a href="./PROJECTS/UI_Components/Rotating Navigation/index.html" target="_blank">
+                <img src="images/PROJECTS/rotating navigation.png" alt="Rotating Navigation">
+                <p>Rotating Navigation</p>
+            </a>
+        </div>
+
+        <div class="workBx" data-type="ui-component">
+            <a href="./PROJECTS/UI_Components/Hidden_ Search_Widget/index.html" target="_blank">
+                <img src="images/PROJECTS/hodden search widget.png" alt="Hidden Search Widget">
+                <p>Hidden Search Widget</p>
+            </a>
+        </div>
+
+        <div class="workBx" data-type="ui-component">
+            <a href="./PROJECTS/UI_Components/Blurry_Loading/index.html" target="_blank">
+                <img src="images/PROJECTS/blurry loading.png" alt="Blurry Loading">
+                <p>Blurry Loading</p>
+            </a>
+        </div>
+
+        <div class="workBx" data-type="ui-component">
+            <a href="./PROJECTS/UI_Components/Scroll_Animation/index.html" target="_blank">
+                <img src="images/PROJECTS/scroll animation.png" alt="Scroll Animation">
+                <p>Scroll Animation</p>
+            </a>
+        </div>
+
+        <div class="workBx" data-type="ui-component">
+            <a href="./PROJECTS/UI_Components/Split_Landing_Page/index.html" target="_blank">
+                <img src="images/PROJECTS/split landing page.png" alt="Split Landing Page">
+                <p>Split Landing Page</p>
+            </a>
+        </div>
+
+        <div class="workBx" data-type="ui-component">
+            <a href="./PROJECTS/UI_Components/Form_Wave_Animation/index.html" target="_blank">
+                <img src="images/PROJECTS/form wave animation.png" alt="Form Wave Animation">
+                <p>Form Wave Animation</p>
+            </a>
+        </div>
+
+        <div class="workBx" data-type="ui-component">
+            <a href="./PROJECTS/UI_Components/FAQ_Collapse/index.html" target="_blank">
+                <img src="images/PROJECTS/FAQ.png" alt="FAQ Collapse">
+                <p>FAQ Collapse</p>
+            </a>
+        </div>
+
+        <div class="workBx" data-type="ui-component">
+            <a href="./PROJECTS/UI_Components/Incrementing_Counter/index.html" target="_blank">
+                <img src="images/PROJECTS/incrementing_counter.png" alt="Incrementing Counter">
+                <p>Incrementing Counter</p>
+            </a>
+        </div>
+
+        <div class="workBx" data-type="ui-component">
+            <a href="./PROJECTS/UI_Components/Backround_Slider/index.html" target="_blank">
+                <img src="images/PROJECTS/background_slider.png" alt="Background Slider">
+                <p>Background Slider</p>
+            </a>
+        </div>
+
+        <div class="workBx" data-type="ui-component">
+            <a href="./PROJECTS/UI_Components/Kinetic _Loader/index.html" target="_blank">
+                <img src="images/PROJECTS/kinetic_loader.png" alt="Kinetic Loader">
+                <p>Kinetic Loader</p>
+            </a>
+        </div>
+
+        <div class="workBx" data-type="ui-component">
+            <a href="./PROJECTS/UI_Components/Sticky_NavBar/index.html" target="_blank">
+                <img src="images/PROJECTS/sticky_navbar.png" alt="Sticky NavBar">
+                <p>Sticky Navigation Bar</p>
+            </a>
+        </div>
+
+        <div class="workBx" data-type="ui-component">
+            <a href="./PROJECTS/UI_Components/Toast_Notification/index.html" target="_blank">
+                <img src="images/PROJECTS/toast_notification.png" alt="Toast Notifications">
+                <p>Toast Notifications</p>
+            </a>
+        </div>
+
+        <div class="workBx" data-type="ui-component">
+            <a href="./PROJECTS/UI_Components/Content_Placeholder/index.html" target="_blank">
+                <img src="images/PROJECTS/content_placeholder.png" alt="Content Placeholder">
+                <p>Content Placeholder</p>
+            </a>
+        </div>
+
+        <div class="workBx" data-type="ui-component">
+            <a href="./PROJECTS/UI_Components/Double_Heart_Click/index.html" target="_blank">
+                <img src="images/PROJECTS/double_heart_click.png" alt="Double Heart Click">
+                <p>Double Heart Click</p>
+            </a>
+        </div>
+
+        <div class="workBx" data-type="ui-component">
+            <a href="./PROJECTS/UI_Components/Animated_Countdown/index.html" target="_blank">
+                <img src="images/PROJECTS/animated_countdown.png" alt="Animated Countdown">
+                <p>Animated Countdown</p>
+            </a>
+        </div>
+
+        <div class="workBx" data-type="ui-component">
+            <a href="./PROJECTS/UI_Components/Auto_Text_Effect/index.html" target="_blank">
+                <img src="images/PROJECTS/auto_text_effect.png" alt="Auto Text Effect">
+                <p>Auto Text Effect</p>
+            </a>
+        </div>
+
+        <div class="workBx" data-type="ui-component">
+            <a href="./PROJECTS/UI_Components/Good_Fast_Cheap_Checkboxes/index.html" target="_blank">
+                <img src="images/PROJECTS/checkboxes.png" alt="Good Fast Cheap Checkboxes">
+                <p>Good, Fast, Cheap Checkboxes</p>
+            </a>
+        </div>
+
+        <div class="workBx" data-type="ui-component">
+            <a href="./PROJECTS/UI_Components/Mobile_Tab_Navigation/index.html" target="_blank">
+                <img src="images/PROJECTS/mobile_tab_navbar.png" alt="Mobile Tab Navigation Bar">
+                <p>Mobile Tab Navigation Bar</p>
+            </a>
+        </div>
+
+        <div class="workBx" data-type="ui-component">
+            <a href="./PROJECTS/UI_Components/Background_Boxes/index.html" target="_blank">
+                <img src="images/PROJECTS/background_boxes.png" alt="Background Boxes">
+                <p>Background Boxes</p>
+            </a>
+        </div>
+
+        <div class="workBx" data-type="ui-component">
+            <a href="./PROJECTS/UI_Components/Verify_Account_UI/index.html" target="_blank">
+                <img src="images/PROJECTS/verify_account.png" alt="Veify Account UI">
+                <p>Verify Account UI</p>
+            </a>
+        </div>
+
+        <div class="workBx" data-type="ui-component">
+            <a href="./PROJECTS/UI_Components/Image_Carousel/index.html" target="_blank">
+                <img src="images/PROJECTS/image_carousel.png" alt="Image Carousel">
+                <p>Image Carousel</p>
+            </a>
+        </div>
+
+        <div class="workBx" data-type="ui-component">
+            <a href="./PROJECTS/UI_Components/Hoverboard/index.html" target="_blank">
+                <img src="images/PROJECTS/hoverboard.png" alt="Hoverboard">
+                <p>Hoverboard</p>
+            </a>
+        </div>
+
+        <div class="workBx" data-type="ui-component">
+            <a href="./PROJECTS/UI_Components/Feedback_UI_Design/index.html" target="_blank">
+                <img src="images/PROJECTS/feedback_ui.png" alt="Feedback UI Design">
+                <p>Feedback UI Design</p>
+            </a>
+        </div>
+
+        <div class="workBx" data-type="ui-component">
+            <a href="./PROJECTS/UI_Components/Testimonial_Box_Switcher/index.html" target="_blank">
+                <img src="images/PROJECTS/testimonial_box_switcher.png" alt="Testimonial Box Switcher">
+                <p>Testimonial Box Switcher</p>
+            </a>
+        </div>
+    </div>
+</section>
